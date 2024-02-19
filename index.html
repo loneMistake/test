@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <button class="theme-toggle-button">Dark mode</button>
+    </header>
+
+    <main>
+        <section class="window">
+            <div class="window__title">
+                <h1>Welcome to the general culture test!</h1>
+                <p>Take this test to check your knowledge in various fields: history, literature, geography, and much more.</p>
+            </div>
+            <div class="window__start">
+                <button class="window__btn easy-btn" onclick="startQuizWithArray(quizData)">Easy</button>
+                <button class="window__btn medium-btn" onclick="startQuizWithArray(mediumQuizData)">Middle</button>
+                <button class="window__btn hard-btn" onclick="startQuizWithArray(hardQuizData)">Hard</button>  
+            </div>
+            <progress class="progress-bar" value="0" max="100" ></progress>
+            <div class="quiz-container" style="display:none;">
+                <div class="timer"></div>
+                <div class="question"></div>
+                <div class="options"></div> 
+                <div class="score"></div>
+                <div class="result"></div>
+                
+                <button class="next-btn" onclick="nextQuestion()">Next Question</button>
+                <button class="restart-btn" onclick="restartQuiz()">Restart Quiz</button>
+            </div>        
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

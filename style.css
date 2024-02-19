@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #fff;
+  --window-color: #7269FF;
+  --text-color: #fff;
+}
+
+.dark-theme body {
+  --background-color: #0F0B21;
+  --window-color: #d4aedb;
+  --text-color: #fff;
+}
+
+.dark-theme body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.window__title{
+  color: var(--background-color);
+}
+.options, .question{
+  color: var(--background-color);
+}
+.hidden {
+  display: none;
+}
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+body {
+  background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer{
+  color: var(--background-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.window {
+  border-radius: 30px;
+  background-color: var(--window-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.option{
+  border: 3px solid var(--background-color);
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px 0;
+
+}
+.options{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.window__btn,
+.restart-btn {
+  background-color: var(--background-color);
+  color: var(--window-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.next-btn {
+  background-color: var(--background-color);
+  color: var(--window-color);
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.quiz-container{
+  width: 300px;
+  text-align: center;
+}
+
+.theme-toggle-button{
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  background-color: var(--window-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  width: 3%;
+  height: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50px;
+  transition: width 0.5s ease; 
+}
+
+.progress-bar::-webkit-progress-bar {background-color: var(--background-color); width: 100%;}
